@@ -20,6 +20,11 @@ body{
 }
 
 .logo{
+    float: left;
+    width: 11rem;
+    height: 3rem;
+    margin: 0.02rem 1rem 0 0;
+
     font-family: 'Send Flowers', cursive;
     font-size: 2rem;
     color: rgba(219, 86, 210, 0.896);
