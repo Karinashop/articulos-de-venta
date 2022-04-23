@@ -11,6 +11,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a:link{
+    color: rgba(85, 26, 139, 0.7);
+}
+
 .menu{
     position: fixed;
     background-color: rgba(86, 83, 86, 0.589);
@@ -51,9 +55,12 @@ body{
     display: inline-block;
     /* padding: 0px 20px 0px 20px; */
 }
+
 body a{
     text-decoration: none;
+    color: 0 0.7rem 0.4rem rgba(227, 53, 242, 0.7);
 }
+
 a:hover{
     color: rgb(99, 223, 206);
     transition: color 0.2s ease;
@@ -83,6 +90,44 @@ a:hover{
     text-align: center;
     text-shadow: 0 0.7rem 0.4rem rgba(227, 53, 242, 0.7);
 }
+
+#comunicate{
+    text-shadow: none;
+}
+
+#whatsapp{
+    margin: 0rem;
+    padding: 0rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.3rem 0.9rem rgba(0,0,0,0.9);
+    width: auto;
+    height: auto;
+}
+
+/*BOTON OPCIONAL EN CASO DE LINK CON LETRAS*/
+
+/* #whatsapp{
+    font-family: 'BIZ UDPMincho', serif;
+
+    font-size: 4.5rem;
+    text-shadow: 0 0.4rem 0.3rem rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    width: 35rem;
+    height: 9rem;
+    text-align: center;
+    background-image: url(Logos/whats.webp);
+    background-size: 15.5rem auto;
+    background-color: rgba(245, 123, 237, 0.896);
+}
+
+#whatsapp a{
+    color: rgba(28, 28, 28, 0.898);
+}
+#whatsapp a:hover{
+    color: white;
+    transition: color 0.4s ease; 
+} */
+
 
 .contenedor_de_aviso {
     width: auto;
@@ -210,4 +255,3 @@ footer section{
 .combo{
     padding: 0 0 0 8rem;
 }
-
