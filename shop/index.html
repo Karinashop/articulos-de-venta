@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marlon Azua">
     <title>Karina's Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,8 +11,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
     <div class="container_body">
+        <div class="publicidad">
+            <p class="parrafoaviso">
+                ¡Hey!,<br>¿ya visitaste nuestra nueva sección  de <a id="idaviso" onclick="closePu();" href="#ropa">Ropa</a>?<br>
+                <button type="button" onclick="closePu();" class="botoncerrar">
+                    <b>Lo haré!</b>
+                </button>
+            </p>
+        </div>
         <header>
             <menu class="menu">
                 <article class="logo">
@@ -1286,6 +1295,6 @@
 
         
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
