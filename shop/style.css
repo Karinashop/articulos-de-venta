@@ -164,8 +164,8 @@ section article:hover{
 
 /*SECCION DE AVISOS DE NUEVOS PRODUCTOS*/
 .publicidad{
-    font-family: cursive;
-    background-color: rgba(176, 127, 206, 0.885);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(195, 153, 222, 0.885);
     width: 60%;
     height: 20rem;
     font-size: 30px;
