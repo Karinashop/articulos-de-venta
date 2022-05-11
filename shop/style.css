@@ -167,9 +167,11 @@ section article:hover{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgba(195, 153, 222, 0.885);
     width: 60%;
-    height: 20rem;
+    height: 18rem;
     font-size: 30px;
     padding: 60px;
+    border: 1rem;
+    border-style: double;
     border-radius: 0.8rem;
     text-align: center;
     position: absolute;
@@ -187,7 +189,7 @@ section article:hover{
 }
 .botoncerrar{
     position: relative;
-    top: 10px;
+    top: 50px;
     font-size: 1.8rem;
     background-color: #e9b8f0f4;
     border-radius: 0.5rem;
