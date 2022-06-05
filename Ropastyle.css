@@ -1,0 +1,254 @@
+/*MEDIDAS DE ESTILO GENERALES*/
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.MainContenedor{
+    width: 100%;
+    height: auto;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
+    /* color: black; */
+}
+a:link{
+   color: black; 
+}
+
+/*HEADER*/
+#headerContenedor{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: relative;
+}
+#logo{
+    cursor: pointer;
+    font-family: 'Macondo', cursive;
+    width: auto;
+    font-size: xx-large;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+#Buscando{
+    width: 30%;
+    height: 43%;
+    position: absolute;
+    top: 30px;
+    left: 36%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 0.3rem;
+    padding: 0 0 0 10px;
+    box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.2);
+}
+::placeholder{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#buscar{
+    cursor: pointer;
+    position: absolute;
+    right: 30%;
+    top: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.1);
+}
+#whatsApp{
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    top: 30px;
+    font-family: 'Merriweather', serifs;
+    font-size: larger;
+    border-radius: 0.5rem;
+}
+#iconWhats{
+    position: absolute;
+    right: 6%;
+    top: 10px;
+}
+#TamañoIconBus{
+    width: 58px; 
+    height: 58px;
+}
+/**/
+
+
+/*SECOND FOR RESPONSIVE*/
+#SegundoMenu{
+    display: none;
+}
+#Buscando2{
+    width: 76.5%;
+    height: 40px;
+    padding: 0 0 0 10px;
+    position: absolute;
+    top: 20px;
+    left: 48px;
+    /* box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.5); */
+    box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+    background-color: rgb(241, 241, 241);
+}
+#Lupa{
+    cursor: pointer;
+    position: absolute;
+    top: 19px;
+    right: 8%;
+    /* border-radius: 0.4rem; */
+    box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.2);
+    padding: 6.7px;
+    background-color: rgb(94, 94, 94);
+}
+#MenuComeBackButton{
+    cursor: pointer;
+}
+#MenuFixComeBack{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+/**/
+/*BOTONES ADICIONALES DE PHONE MENU O OTROS*/
+#ButtonMenuPhone{
+    display: none;
+}
+#NewBuscarForPhone{
+    display: none;
+}
+/*THIRD FOR RESPONSIVE*/
+#TercerMenu{
+    display: none;
+    width: 60%;
+    height: 150px;
+    background-color: rgb(218, 218, 218);
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 800px){
+    #iconWhats{
+        display: none;
+    }
+    #whatsApp{
+        right: 8%;
+    }
+}
+@media screen and (max-width:625px){
+    #whatsApp{
+        display: none;
+    }
+    #iconWhats{
+        display: block;
+        right: 13%;
+        top: 20%;
+    }
+}
+@media screen and (max-width:600px){
+    #Buscando{
+        display: none;
+    }
+    #buscar{
+        right: 0%;
+        right: 35%;
+    }
+    ::placeholder{
+        top: 0;
+        top: 14px;
+    }
+    #buscar{
+        background-color: white;
+        box-shadow: none;
+        right: 0;
+        right: 37%;
+    }
+}
+
+/*PHONE RESPOSIVE*/
+@media screen and (max-width: 400px){
+    #PrimerMenu{
+        display: block;
+    }
+    #SegundoMenu{
+        display: none; /*SEGUNDO MENU DISPLAY: NONE*/
+    }
+    ::placeholder{
+        top: 0;
+        top: 14px;
+    }
+    #logo{
+        cursor: pointer;
+        font-family: 'Macondo', cursive;
+        width: auto;
+        font-size: 1.9rem;
+        position: absolute;
+        top: 25px;
+        left: 55px;
+    }
+    #buscar{
+        /* cursor: pointer;
+        position: absolute;
+        top: 12px;
+        border-radius: 50%; */
+        right: 25%;
+        display: none;
+    }
+    #NewBuscarForPhone{
+        display: block;
+    }
+    #IconNewBuscar{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 22px;
+        right: 25%;
+    }
+    #iconWhats{
+        /* right: 6%;
+        top: 10px; */
+        right: 6%;
+        top: 13px;
+        width: 50px;
+        height: 50px;
+    }
+    #TamañoIconBus{
+        /* width: 58px; 
+        height: 58px; */
+        width: 50px;
+        height: 50px;
+    }
+    #ButtonMenuPhone{
+        display:block;
+        position: absolute;
+        top: 27px;
+        left: 10px;
+        background-color: white;
+    }
+    #TercerMenu{
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: auto;
+        background-color: rgb(218, 218, 218);
+    }
+    /*font-family: 'Playfair Display', serif;*/
+    .Tlink{
+        font-family: 'Playfair Display', serif;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        /* background-color: rgb(196, 196, 196); */
+    }
+}
