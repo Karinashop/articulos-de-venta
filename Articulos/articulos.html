@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="spa">
+<head>
+   <meta charset="UTF-8">
+   <meta name="author" content="Marlon Azua">
+   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link  rel="icon"   href="../Nimg/ks im.png" type="image/png" />
+   <link rel="stylesheet" type="text/css" href="../BarMenu.css">
+   <link rel="stylesheet" type="text/css" href="../articulos.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+   
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+   <title>Karina's Shop</title>
+</head>
+<body>
+   <div id="MainContenedor">
+      <header id="headerContenedor">
+         <div id="PrimerMenu">
+               <button id="ButtonMenuPhone">
+                  <img id="ButtonFixMenu" src="../Nimg/menu icon.png">
+               </button>
+               <section onclick="recargar ()" id="logoCon">
+                  <p id="logo" onclick="recargar ()"><b>Karina's Shop</b></p>
+               </section>
+               <form>
+                  <input type="text" id="Buscando" name="buscador" placeholder="Buscar.."/>
+               </form>
+               <button id="NewBuscarForPhone">
+                  <img id="IconNewBuscar" src="../Nimg/Buscar color gif.gif">
+               </button>
+               <button type="button" id="buscar" >
+                  <img id="TamañoIconBus" src="../Nimg/busqueda icono.png" >
+               </button>
+               <a href="https://bit.ly/3EHDdBT"><img id="iconWhats" src="../Nimg/whatsapp icon.png"></a>
+               <button type="button" id="whatsApp">
+                  <a href="https://bit.ly/3EHDdBT"> <b> WhatsApp </b></a>
+               </button>
+         </div>
+         <div id="SegundoMenu">
+               <button type="button" id="MenuComeBackButton">
+                  <img id="MenuFixComeBack" src="../Nimg/come back.png">
+               </button>
+               <form>
+                  <input type="text" id="Buscando2" name="buscador" placeholder="Buscar.."/>
+               </form>
+               <button> <img id="Lupa" src="../Nimg/Lupa.png"></button>
+         </div>
+      </header>
+      <div id="TercerMenu">
+            <a class="Tlink" href="../Ropa/ropa.html"><b >Ropa</b></a><br>
+            <a class="Tlink" href="../Articulos/articulos.html"><b>Artículos</b></a><br>
+            <a class="Tlink" href="../Perfumes/perfume.html"> <b>Perfumes</b></a><br>
+            <a class="Tlink" href="../Joyeria/joyeria.html"> <b>Joyería</b></a><br>
+            <a class="Tlink" href="../Cosmeticos/cosmeticos.html"><b>Cosmeticos</b></a><br>
+      </div>
+      <div id="contenerdorDeArticulos">
+         <h3 id="nombreSeccion"> Ropa </h3>
+         <ul>
+            <li class="articulo">
+               <h3>Vestido</h3>
+               
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Nozztra</span><br>
+                  Color:<span class="letraDeEspecificacion"> Rojo</span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/nozztra vestido rojo.jpeg">
+               </div>
+               <p class="precio">Precio: $15.00</p>
+            </li>
+            
+            <li class="articulo">
+               <h3>Vestido</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Rojo</span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/vestido rojo fal.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Azul</span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/blusa azul jolie.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo"> 
+               <h3>Jeans</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Glood</span><br>
+                  Color:<span class="letraDeEspecificacion"> Negro</span><br>
+                  Talla: <span class="letraDeEspecificacion"> 16</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/jeans negros.jpeg">
+               </div>
+               <p class="precio">Precio: $15.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Vestido</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Mi Ángel</span><br>
+                  Color:<span class="letraDeEspecificacion"> Cebra</span><br>
+                  Talla: <span class="letraDeEspecificacion"> M</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/vestido cebra.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Enterizo</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Palo Rosa</span><br>
+                  Talla: <span class="letraDeEspecificacion"> M</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/vestido palo rosa.jpeg">
+               </div>
+               <p class="precio">Precio: $15.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Vestido</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Vino</span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/vestido color vino.jpeg">
+               </div>
+               <p class="precio">Precio: $15.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Vestido</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Negro</span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/vestido jolie negro.jpeg">
+               </div>
+               <p class="precio">Precio: $15.00</p>
+            </li>
+            </li>
+            <li class="articulo">
+            <h3>Blusa</h3>
+            <p class="especificacionesDeArticulo">
+               Marca:<span class="letraDeEspecificacion"> Nivis</span><br>
+               Color:<span class="letraDeEspecificacion"> Verde</span><br>
+               Talla: <span class="letraDeEspecificacion"> S</span>
+            </p>
+            <div class="imagenContenedor">
+               <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Blusa verde nivis.jpeg">
+            </div>
+            <p class="precio">Precio: $10.00</p>
+            </li>
+            <li class="articulo">
+            <h3>Blusa</h3>
+            <p class="especificacionesDeArticulo">
+               Marca:<span class="letraDeEspecificacion"> Hechizhada</span><br>
+               Color:<span class="letraDeEspecificacion"> Azul Marino</span><br>
+               Talla: <span class="letraDeEspecificacion"> S</span>
+            </p>
+            <div class="imagenContenedor">
+               <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Blusa echizhada.jpeg">
+            </div>
+            <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Body con chaleco</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Hechizhada</span><br>
+                  Color:<span class="letraDeEspecificacion"> Blanco</span><br>
+                  Talla: <span class="letraDeEspecificacion"> M</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/body con chaleco.jpeg">
+               </div>
+               <p class="precio">Precio: $10.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Body con chaleco</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Nivis</span><br>
+                  Color:<span class="letraDeEspecificacion"> Neon</span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/body neon.jpeg">
+               </div>
+               <p class="precio">Precio: $10.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Neon</span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Blusa neon rosa.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Mistika</span><br>
+                  Color:<span class="letraDeEspecificacion"> Verde</span><br>
+                  Talla: <span class="letraDeEspecificacion"> S</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Blusa verde mistika.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Nozztra</span><br>
+                  Color:<span class="letraDeEspecificacion"> Rojo Vino</span><br>
+                  Talla: <span class="letraDeEspecificacion"> XL</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Blusa rojo vino nozz.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Rojo </span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Blusa roja Jolie.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Leonisa</span><br>
+                  Color:<span class="letraDeEspecificacion"> Estampado</span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/blusa leonisa estampado.jpeg">
+               </div>
+               <p class="precio">Precio: $15.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusón</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Nozztra</span><br>
+                  Color:<span class="letraDeEspecificacion"> Azul Marino</span><br>
+                  Talla: <span class="letraDeEspecificacion"> XL</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/bluson nostra azul marino.jpeg">
+               </div>
+               <p class="precio">Precio: $15.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Chaqueta</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Azul </span><br>
+                  Talla: <span class="letraDeEspecificacion"> L</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Chaqueta jolie.jpeg">
+               </div>
+               <p class="precio">Precio: $18.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Vestido</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Dijazz</span><br>
+                  Color:<span class="letraDeEspecificacion"> Coral con negro </span><br>
+                  Talla: <span class="letraDeEspecificacion"> XL</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/vestido coral.jpeg">
+               </div>
+               <p class="precio">Precio: $18.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Vestido</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Dijazz</span><br>
+                  Color:<span class="letraDeEspecificacion"> Coral  </span><br>
+                  Talla: <span class="letraDeEspecificacion"> XL</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Vestido coral dijazz.jpeg">
+               </div>
+               <p class="precio">Precio: $18.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Cardigans</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Neon  </span><br>
+                  Talla: <span class="letraDeEspecificacion"> S</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/cardigans neon.jpeg">
+               </div>
+               <p class="precio">Precio: $10.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Vestido</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Jolie</span><br>
+                  Color:<span class="letraDeEspecificacion"> Negro  </span><br>
+                  Talla: <span class="letraDeEspecificacion"> M</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/vestido jolie negro talla m.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Hechizhada</span><br>
+                  Color:<span class="letraDeEspecificacion"> Amarilla </span><br>
+                  Talla: <span class="letraDeEspecificacion"> M</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Blusa amarilla.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Pantalon</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Avenue NY</span><br>
+                  Color:<span class="letraDeEspecificacion"> Azul Marino </span><br>
+                  Talla: <span class="letraDeEspecificacion"> 12</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Pnatalon AZUL MARINO.jpeg">
+               </div>
+               <p class="precio">Precio: $18.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Mi Ángel</span><br>
+                  Color:<span class="letraDeEspecificacion"> Palo Rosa </span><br>
+                  Talla: <span class="letraDeEspecificacion"> XL</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/Blusa palo rosa mi angel.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+            <li class="articulo">
+               <h3>Blusa</h3>
+               <p class="especificacionesDeArticulo">
+                  Marca:<span class="letraDeEspecificacion"> Hechizhada</span><br>
+                  Color:<span class="letraDeEspecificacion"> Palo Rosa </span><br>
+                  Talla: <span class="letraDeEspecificacion"> M</span>
+               </p>
+               <div class="imagenContenedor">
+                  <img class="imgDeArticulos" src="../Img articulos/ImgRopa/blusa talla m palo rosa.jpeg">
+               </div>
+               <p class="precio">Precio: $12.00</p>
+            </li>
+         </ul>
+      </div>
+      
+
+      <!-- <div id="imgAmpliada">
+         <img  class="imgToControl" src="../Img articulos/ImgRopa/nozztra vestido rojo.jpeg" >
+         <img  class="imgToControl" src="../Img articulos/ImgRopa/vestido rojo fal.jpeg">
+         <img class="botonCerrarImg" src="../Img articulos/Bton cerrarIMG.png">
+         
+         <a id="prev" onclick="plusSliden(-1) ">&#10094;</a>
+         <a id="next" onclick="plusSliden(1)" >&#10095;</a>
+      </div> -->
+      <!-- <footer>
+         <p id="derechos">
+               © Todos los derechos reservados 2022
+         </p>
+      </footer> -->
+   </div>
+   <script src="../mainpages.js"></script>
+</body>
+</html>

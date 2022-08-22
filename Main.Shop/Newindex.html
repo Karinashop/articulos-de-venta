@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="spa">
+   <head>
+   <meta charset="UTF-8">
+   <meta name="author" content="Marlon Azua">
+   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link  rel="icon"   href="Nimg/ks im.png" type="image/png" />
+   <link rel="stylesheet" type="text/css" href="Newstyle.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Joan&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+   <title>Karina's Shop</title>
+   </head>
+   <body>
+   <div id="MainContenedor">
+      <header id="headerContenedor">
+            <div id="PrimerMenu">
+               <button id="ButtonMenuPhone">
+                  <img id="ButtonFixMenu" src="Nimg/menu icon.png">
+               </button>
+               <section onclick="recargar ()" id="logoCon">
+                  <p id="logo" onclick="recargar ()"><b>Karina's Shop</b></p>
+               </section>
+               <form>
+                  <input type="text" id="Buscando" name="buscador" placeholder="Buscar.."/>
+               </form>
+               <button id="NewBuscarForPhone">
+                  <img id="IconNewBuscar" src="Nimg/Buscar color gif.gif">
+               </button>
+               <button type="button" id="buscar" >
+                  <img id="TamañoIconBus" src="Nimg/busqueda icono.png" >
+               </button>
+               <a href="https://bit.ly/3EHDdBT"><img id="iconWhats" src="Nimg/whatsapp icon.png"></a>
+               <button type="button" id="whatsApp">
+                  <a href="https://bit.ly/3EHDdBT"> <b> WhatsApp </b></a>
+               </button>
+            </div>
+            <div id="SegundoMenu">
+               <button type="button" id="MenuComeBackButton">
+                  <img id="MenuFixComeBack" src="Nimg/come back.png">
+               </button>
+               <form>
+                  <input type="text" id="Buscando2" name="buscador" placeholder="Buscar.."/>
+               </form>
+               <button> <img id="Lupa" src="Nimg/Lupa.png"></button>
+            </div>
+      </header>
+      <div id="TercerMenu">
+            <a class="Tlink" href="../Ropa/ropa.html"><b >Ropa</b></a><br>
+            <a class="Tlink" href="../Articulos/articulos.html"><b>Artículos</b></a><br>
+            <a class="Tlink" href="../Perfumes/perfume.html"> <b>Perfumes</b></a><br>
+            <a class="Tlink" href="../Joyeria/joyeria.html"> <b>Joyería</b></a><br>
+            <a class="Tlink" href="../Cosmeticos/cosmeticos.html"><b>Cosmeticos</b></a><br>
+      </div>
+      <div id="imgBackgroung">
+            <!-- <h1 id="bienvenido">
+               <b id="LtColor">BIENVENIDO A KARINA'S SHOP</b>
+            </h1> -->
+            <div id="BodyContainerAll">
+               <div id="selecionatxt">
+                  <h2 id="selecionat">
+                     Selecione y presione lo que está buscando:
+                  </h2>
+               </div>
+               <div class="slidesContainer">
+                  <div class="slide fade" onclick="Ropalink();">
+                     <div class="numbertext">1 / 5</div>
+                     <img class="imgToSelect" src="Nimg/Ropa.jpg" style="width:100%;">
+                     <div class="text"><h1 class="Rtext">Ropa</h1></div>
+                  </div>
+                  <div class="slide fade" onclick="Perfumelink();">
+                     <div class="numbertext">2 / 5</div>
+                     <img class="imgToSelect" src="Nimg/perfume.jpg" style="width:100%">
+                     <div class="text"><h1 class="Rtext">Perfumes</h1></div>
+                  </div>
+                  <div class="slide fade" onclick="Artciuloslink()">
+                     <div class="numbertext">3 / 5</div>
+                     <img class="imgToSelect" src="Nimg/Electrodomesticos.jpg" style="width:100%">
+                     <div class="text"><h1 class="Rtext">Artículos</h1></div>
+                  </div>
+                  <div class="slide fade" onclick="Joyerialink()">
+                     <div class="numbertext">4 / 5</div>
+                     <img class="imgToSelect" src="Nimg/visuteria.jpg" style="width: 100%">
+                     <div class="text"><h1 class="Rtext">Joyería</h1></div>
+                  </div>
+                  <div class="slide fade" onclick="cosmeticoslink()">
+                     <div class="numbertext">5 / 5</div>
+                     <img class="imgToSelect" src="Nimg/CosmeticosImg.jpg" style="width:100%">
+                     <div class="text"><h1 class="Rtext">Cosméticos</h1></div>
+                  </div>
+                  <a class="prev" onclick="plusSliden(-1) ">&#10094;</a>
+                  <a class="next" onclick="plusSliden(1)">&#10095;</a>
+               </div>
+            </div>
+            
+
+      </div>
+         <!-- <footer>
+            <p id="derechos">
+                  © Todos los derechos reservados 2022
+            </p>
+         </footer> -->
+      </div>
+      <script src="Newscript.js"></script>
+   </body>
+</html>

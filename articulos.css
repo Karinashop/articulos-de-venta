@@ -1,0 +1,127 @@
+*{
+   list-style: none;
+}
+/*RESPONSIVE PARA PHONE- DA ESTILO A LOS ARTICULOS*/
+@media screen and (max-width: 400px){
+   #nombreSeccion{
+      font-family: 'Rubik Marker Hatch', cursive;
+      color: darksalmon;
+      font-size: xx-large;
+      border-radius: 0.5rem;
+      padding: 20px;
+      letter-spacing: 2.5pt;
+      background-image: url(https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=411&q=80);
+      margin: 0 auto;
+      text-align: center;
+      /*text-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.987);*/
+   }
+   #contenerdorDeArticulos{
+      background-color: rgb(234, 234, 234);
+      position: absolute;
+      height: auto;
+      
+   }  
+   .articulo{
+      position: relative;
+      float: left;
+      top: 10px;
+      left: 1%;
+      width: 180px;
+      border-radius: 0.5rem;
+      padding: 3px;
+      margin: 2px 2px 10px;
+      border-style: solid;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.166);
+   }
+   .imagenContenedor{
+      text-align : center;
+      padding: 10px 0px 0px 0px;
+      height: 250px;
+      overflow:hidden;
+   } 
+   .imgDeArticulos{
+      width: 170px;
+   }
+   
+   h3{
+      padding-left: 10px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      font-family: 'Noto Serif', serif;
+      letter-spacing: 1.2pt;
+      font-weight: bold;
+      color: black;
+   }
+   .especificacionesDeArticulo{
+      padding-left: 5px ;
+      color: coral;
+   }
+   .letraDeEspecificacion{
+      color: black;
+   }
+   .precio{
+      font-family: 'Noto Sans JP', sans-serif;
+      padding: 5px;
+   }
+   /*ESTILO Y MODELAJE DE IMG ZOOM - DA ESTILO A LAS IMAGENES SOBREPUESTAS*/
+   
+   #imgAmpliada, #imgAmpliadaSinVector{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.632);
+      justify-content: center;
+      align-items: center;
+   }
+   #imgAmpliadaSinVector{
+      display: flex;
+   }
+   #imgAmpliada{
+      display: none;
+   }
+   .imgToControl{
+      width: 80%;
+   }
+
+   .imgToControl{
+      -webkit-animation-name: fade;
+      -webkit-animation-duration:1.5s;
+      animation-name:fade;
+      animation-duration:0.5s;
+   }
+   @-webkit-keyframes fade{
+      from{opacity:.4}
+      to{opacity:1}
+   }
+   @keyframes fade{
+      from{opacity:.4}
+      to{opacity:1}
+   }
+
+
+   #botonCerrarImg{
+      cursor: pointer;
+      position: absolute;
+      right: 5%;
+      top: 18%;
+   }
+   .prev,.next{
+      position: absolute;
+      cursor:pointer;
+      font-size: 50px;
+      width: auto;
+      padding: 10px;
+      border-radius: 00.5rem;
+      background-color: rgb(106, 106, 106);
+   }
+   .next{
+      right: 5px;
+   }
+   .prev{
+      left: 5px;
+   }
+
+   
+}
