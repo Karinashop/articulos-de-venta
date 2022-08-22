@@ -122,6 +122,9 @@
    .prev{
       left: 5px;
    }
-
+   #agotado{
+      font-family: 'Noto Sans JP', sans-serif;
+      color: red;
+   }
    
 }
