@@ -18,8 +18,8 @@
    #contenerdorDeArticulos{
       background-color: rgb(234, 234, 234);
       position: absolute;
-      height: auto;
-      
+      height: 100%;
+      width: 100%;
    }  
    .articulo{
       position: relative;
@@ -126,5 +126,10 @@
       font-family: 'Noto Sans JP', sans-serif;
       color: red;
    }
-   
+   .filtro{
+      display: none;
+   }
+}
+.filtro{
+   display: none;
 }

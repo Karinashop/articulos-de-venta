@@ -26,6 +26,7 @@ var MPhoneB = document.getElementById('ButtonMenuPhone'),
 MPhoneB.addEventListener('click',cambioButtonMenu ,true);
 
 //
+
 function DropDownBar(){
    document.getElementById('PrimerMenu').style.display='none'
    document.getElementById('SegundoMenu').style.display='block'
@@ -37,10 +38,12 @@ function DropDownBar(){
 function NoneDropDownBar(){
    document.getElementById('PrimerMenu').style.display='block'
    document.getElementById('SegundoMenu').style.display='none'
+   
 }
 function Search(evento){
    alert("Se esta buscando");
 }
+
 
 const Ev_OnClick =()=>{
    let ButtonSearch;
