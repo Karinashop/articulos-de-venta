@@ -102,11 +102,13 @@ a:link{
 #Lupa{
     cursor: pointer;
     position: absolute;
-    top: 19px;
-    right: 8%;
+    height: 60px;
+    top: 10px;
+    right: 8.5%;
+    border-radius: 30px;
     /* border-radius: 0.4rem; */
     box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.2);
-    padding: 6.7px;
+    /* padding: 6.7px; */
     background-color: rgb(94, 94, 94);
 }
 #MenuComeBackButton{
