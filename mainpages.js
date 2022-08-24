@@ -135,6 +135,10 @@ document.querySelectorAll('.imgDeArticulos').forEach(item=>{
                      '<img id="botonCerrarImg" src="../Img articulos/Bton cerrarIMG.png">'+
                   '</div>';
          contenedor.appendChild(newDiv);
+         let espacioCerrar= document.getElementById('imgAmpliadaSinVector');
+         espacioCerrar.addEventListener('click', () =>{
+            document.getElementById('newDiv').remove();
+         })
       }
       
 
