@@ -68,13 +68,26 @@ addEventListener('resize', Ev_OnClick)
 addEventListener('DOMContentLoaded',Ev_OnClick)
 
 //CONTROLADOR DE SLIDES DE LAS IMG AMPLIADAS
-/* let slideIndex= 1;
+
+
+//FUNCION QUE AMPLIA LA IMAGEN
+/**un selector que permite obtener la propiedad imgDeArticulo para luego agregarle la propiedad
+ * addEventListener "click" mediante de una estructura repetitiva para luego añadir un div con la img ampliada
+ * */
+
+//ARRAY DE COMPROBACION PARA LA CREACION DE SLIDES
+const comprobanteImg= ["../Img articulos/ImgRopa/jeans negros.jpeg","../Img articulos/ImgRopa/vestido palo rosa.jpeg","../Img articulos/ImgRopa/vestido jolie negro.jpeg",
+"../Img articulos/ImgRopa/Blusa rojo vino nozz.jpeg"];
+const imgMaches=["../Img articulos/ImgRopa/jeans negro2.jpeg","../Img articulos/ImgRopa/vestido palo rosa2.jpeg","../Img articulos/ImgRopa/vestido jolie negro2.jpeg",
+"../Img articulos/ImgRopa/Blusa rojo vino nozz2.jpeg"];
+
+
+let slideIndex= 1;
 showSlides(slideIndex);
 //CONTROL PREV
 function plusSliden(n){
    showSlides(slideIndex +=n);
 }
-
 //BUCLE QUE CONTROLA LAS IMG DE LOS SLIDES
 function showSlides(n){
    let i;
@@ -85,27 +98,45 @@ function showSlides(n){
       slides[i].style.display="none";
    }
    slides[slideIndex-1].style.display = "block";
-     
-} */
-
-//FUNCION QUE AMPLIA LA IMAGEN
-/**un selector que permite obtener la propiedad imgDeArticulo para luego agregarle la propiedad
- * addEventListener "click" mediante de una estructura repetitiva para luego añadir un div con la img ampliada
- * */
+}
 
 
 document.querySelectorAll('.imgDeArticulos').forEach(item=>{
    item.addEventListener('click', function ampliarLaImagen(element){
       let enlaceImagen= this.src;
-      
+      let enlaceValue= this.getAttribute("src");
+      let encontreLaImg=false;
       const contenedor= document.getElementById("MainContenedor");
       let newDiv = document.createElement("div");
       newDiv.id='newDiv';
-      newDiv.innerHTML='<div id="imgAmpliadaSinVector">'+
+      for(let x=0; x<comprobanteImg.length; x++){
+         if(enlaceValue==comprobanteImg[x]){
+            newDiv.innerHTML='<div id="imgAmpliada">'+
+                                 '<img  class="imgToControl" src="'+enlaceImagen+'" >'+
+                                 '<img  class="imgToControl" id="escondeImg" src="'+imgMaches[x]+'">'+
+                                 '<img id="botonCerrarImg" src="../Img articulos/Bton cerrarIMG.png">'+
+                                 '<a id="prev" onclick="plusSliden(-1) ">&#10094;</a>'+
+                                 '<a id="next" onclick="plusSliden(1)" >&#10095;</a>'+
+                              '</div>'/* +'<script src="../controlador.js"></script>' */;
+            contenedor.appendChild(newDiv);
+            
+            let variable=document.getElementById("variable");
+            variable.className="hide";
+
+            
+            
+            encontreLaImg=true;
+            break;
+         }
+      }
+      if(encontreLaImg==false){
+         newDiv.innerHTML='<div id="imgAmpliadaSinVector">'+
                      '<img  class="imgToControl" src="'+enlaceImagen+'" >'+
                      '<img id="botonCerrarImg" src="../Img articulos/Bton cerrarIMG.png">'+
                   '</div>';
-      contenedor.appendChild(newDiv);
+         contenedor.appendChild(newDiv);
+      }
+      
 
       let btnCerrar = document.getElementById('botonCerrarImg');
       btnCerrar.addEventListener('click', () =>{

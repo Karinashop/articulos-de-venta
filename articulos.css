@@ -1,6 +1,10 @@
 *{
    list-style: none;
 }
+/* body{
+   width: 100%;
+   height: 100%;
+} */
 /*RESPONSIVE PARA PHONE- DA ESTILO A LOS ARTICULOS*/
 @media screen and (max-width: 400px){
    #nombreSeccion{
@@ -18,7 +22,7 @@
    #contenerdorDeArticulos{
       background-color: rgb(234, 234, 234);
       position: absolute;
-      height: 100%;
+      height: auto;
       width: 100%;
    }  
    .articulo{
@@ -78,12 +82,11 @@
    #imgAmpliadaSinVector{
       display: flex;
    }
+   
    #imgAmpliada{
-      display: none;
+      display: flex;
    }
-   .imgToControl{
-      width: 80%;
-   }
+   
 
    .imgToControl{
       -webkit-animation-name: fade;
@@ -100,14 +103,16 @@
       to{opacity:1}
    }
 
-
+   .imgToControl{
+      width: 80%;
+   }
    #botonCerrarImg{
       cursor: pointer;
       position: absolute;
       right: 5%;
       top: 18%;
    }
-   .prev,.next{
+   #prev,#next{
       position: absolute;
       cursor:pointer;
       font-size: 50px;
@@ -116,19 +121,50 @@
       border-radius: 00.5rem;
       background-color: rgb(106, 106, 106);
    }
-   .next{
+   #next{
       right: 5px;
    }
-   .prev{
+   #prev{
       left: 5px;
    }
-   #agotado{
+   .agotado{
       font-family: 'Noto Sans JP', sans-serif;
       color: red;
    }
    .filtro{
       display: none;
    }
+   .este{
+      display: none;
+   }
+   #escondeImg{
+      display: none;
+   }
+   .cuantasImg{
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      font-size: 20px;
+      color: black;
+      font-weight: bold;
+   }
+   #footer{
+      display: grid;
+      width: 100%;
+      position: relative;
+      padding-top: 20px;
+      bottom: 0%;
+      justify-content: center;
+   }
+   #derechos{
+      font-size: 1rem;
+      font-family: 'Rubik Marker Hatch', cursive;
+      padding: 30px;
+      width: auto;
+      border-start-start-radius: 20px;
+      background-color: rgba(255, 127, 80, 0.814);
+   }
+
 }
 .filtro{
    display: none;
