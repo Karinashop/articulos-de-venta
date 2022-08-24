@@ -142,10 +142,10 @@
    }
    .cuantasImg{
       position: absolute;
-      bottom: 10%;
-      left: 50%;
+      bottom: 11%;
+      left: 40%;
       font-size: 20px;
-      color: black;
+      color: rgba(255, 127, 80, 0.897);
       font-weight: bold;
    }
    #footer{
@@ -164,7 +164,26 @@
       border-start-start-radius: 20px;
       background-color: rgba(255, 127, 80, 0.814);
    }
-
+   .losentimos{
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      border-radius: 30%;
+      margin-top: 50%;
+      margin-bottom: 50%;
+      overflow: hidden;
+      height: auto;
+      background-color: white;
+      /*rgba(255, 127, 80, 0.714)  */
+   }
+   #imgLosentimos{
+      width: 200px;
+   }
+   #txtLosentimos{
+      color:rgba(255, 127, 80, 0.714);
+   }
 }
 .filtro{
    display: none;
